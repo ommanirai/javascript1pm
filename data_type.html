@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>data type in js</title>
+</head>
+
+<body>
+    <script>
+        /*
+        data type:
+        types:
+        1. primitive data type
+            a. number
+            b. string
+            c. boolean
+            d. undefined
+        2. non primitive data type
+            a. array
+            b. object
+        */
+        //    number
+        var num = 100.13
+        console.log(typeof (num))
+
+        // string
+        var name = 'ram'
+        console.log(typeof (name))
+
+        // boolean
+        var laptop = true;
+        var iphone = false;
+        console.log(typeof (laptop))
+
+        // undefined
+        var address;
+        console.log(address)
+
+        // array
+        // array is the collection of items
+        // item inside array is called elements
+        // index of array always starts with 0
+        // javascript array is heterogeneous(can store multiple data type)
+        // var details = [1, 2, 3, true, false, 'ram', 'shyam']
+
+        // console.log(details[6])
+
+        // object
+        // object is pair of key/value, property/value, name/value
+        // name, address, phone, email is key
+        // shyam,lalitpur, 982324234, ram@gmail.com is value
+        var details = {
+            name: 'shyam',
+            address: 'laitpur',
+            phone: 982324234,
+            email: 'ram@gmail.com'
+        }
+
+        // method to access the object values
+        // bracket notation method
+        // dot(.) method
+
+
+        // bracket notation
+        console.log(details['name'])
+        names = details['name']
+        console.log(names)
+
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--external css -->
+    <link rel="alternate" href="" type="application/atom+xml" title="Atom">
+    <!-- internal css -->
+    <style>
+        /* div{
+            height: 300px;
+            width: 300px;
+            background-color: aqua;
+        } */
+    </style>
+</head>
+
+<body>
+    <h2 id="heading">heading second</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem sapiente animi harum aperiam, libero,
+        sint, eos amet earum tenetur in itaque autem vitae accusantium iure minima recusandae quas est sit.</p>
+    <div id="division">division first</div>
+    <button onclick="change_me()">Click Me</button>
+    <!-- internal js code -->
+    <script>
+        var details = {
+            name: 'ram',
+            address: 'lalitpur',
+            phone: '9828324324',
+            status: 'online'
+        }
+        name = prompt("enter your name")
+        console.log("your name is: ", name)
+        // dom(document object model) 
+        console.log("hello world")
+        console.log("internal js")
+        console.error("error section")
+        // console.clear()
+        console.table(details)
+        document.getElementById("heading").innerHTML = name
+        document.getElementById("division").style.height = '300px'
+        document.getElementById("division").style.width = '300px'
+        document.getElementById("division").style.backgroundColor = "green"
+        document.getElementById("division").style.fontSize = "36px"
+
+        function change_me() {
+            document.write("now, i am clicked")
+        }
+    </script>
+    <!-- external js code -->
+    <script src="demo.js"></script>
+</body>
+
+</html>
