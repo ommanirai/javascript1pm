@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /*
+        logical operator in js
+        1. and (&&)
+        2. or   (||)
+        3. not (!)
+
+
+
+        1. and (&&)
+        if(a < 100 && a ==100 && a < 200)
+        T => TRUE
+        F => FALSE
+        a => condition 1
+        b => condition 2
+
+        a   b   ( a&&b )
+        T   T   T
+        T   F   F
+        F   T   F
+        F   F   F
+
+        2. or (||)
+        a   b   (a||b)
+        T   T   T
+        T   F   T
+        F   T   T
+        F   F   F
+
+
+        3. not ( ! )
+        a   !a
+        T   F
+        F   T
+
+        */
+        var n = 10;
+        if (n < 20 || n > 25) { // T || F => T
+            console.log("n is less than 20 and 15")
+        }
+
+        if((n != 100)) { // n == 100 => (10 ==100) => !f => t
+            console.log('10')
+        }
+
+        if(true){
+            console.log("block of if")
+        }
+
+    </script>
+</body>
+
+</html>

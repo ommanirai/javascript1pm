@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operator</title>
+</head>
+
+<body>
+    <script>
+        /*
+        Operator in javascript:
+        -> symbol which perform specific task
+
+        types of operator:
+        1. arithmetic operator: +. -, *, /, %
+        2. relational operator: <, >, <=, >=, !=
+        3. logical operator: &&(logical and), ||(logical or), !(logical not)
+        4. assignment operator: =
+        5. comparision operator: ==, ===
+        6. conditional (ternary) operator:
+        7. concatinate operator: + ,
+        */
+
+
+
+        // arithmetic operator
+        // sum(+), difference(-), division(/), multiplication(*), remainder/modulo operator(%)
+        var a = prompt("enter the first number")
+        var b =  prompt("enter the second number")
+        a = Number(a)
+        b = Number(b)
+        var sum;
+        sum = a + b;
+        div = a / b;
+        mul = a * b;
+        rem = a % b;
+        console.log(rem) // 12 + 11 = 23
+        console.log(mul)
+        console.log(div)
+        console.log(sum)
+
+        // concatinate operator
+        //  +(plus) ,(comma) 
+        console.log('the sum of two number '+ a + " and " + b + " is " + sum)
+        console.log('the remainder of two number ' , a , " and " , b , " is ", rem)
+    </script>
+</body>
+
+</html>

@@ -23,20 +23,20 @@
         */
         //    number
         var num = 100.13
-        console.log(typeof (num))
+        // console.log(typeof (num))
 
         // string
         var name = 'ram'
-        console.log(typeof (name))
+        // console.log(typeof (name))
 
         // boolean
         var laptop = true;
         var iphone = false;
-        console.log(typeof (laptop))
+        // console.log(typeof (laptop))
 
         // undefined
         var address;
-        console.log(address)
+        // console.log(address)
 
         // array
         // array is the collection of items
@@ -55,18 +55,28 @@
             name: 'shyam',
             address: 'laitpur',
             phone: 982324234,
-            email: 'ram@gmail.com'
+            email: 'ram@gmail.com',
+            email: 'shyam@gmail.com'
         }
+        details.status = 'active'
+        details['status'] = 'online'
+        console.log(details)
 
         // method to access the object values
         // bracket notation method
-        // dot(.) method
+        // dot(.) notation method
 
 
         // bracket notation
-        console.log(details['name'])
+        // console.log(details['name'])
         names = details['name']
-        console.log(names)
+        // console.log(names)
+
+        // dot notation
+        // console.log(details.email)
+        var name = details.name
+        // console.log(name)
+
 
 
 
