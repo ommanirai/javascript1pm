@@ -17,7 +17,7 @@
         1. arithmetic operator: +. -, *, /, %
         2. relational operator: <, >, <=, >=, !=
         3. logical operator: &&(logical and), ||(logical or), !(logical not)
-        4. assignment operator: =
+        4. assignment operator: =, +=, -=, *=, /=, %=
         5. comparision operator: ==, ===
         6. conditional (ternary) operator:
         7. concatinate operator: + ,
@@ -27,19 +27,24 @@
 
         // arithmetic operator
         // sum(+), difference(-), division(/), multiplication(*), remainder/modulo operator(%)
+         // ++(increment operator) , --(decrement operator)
         var a = prompt("enter the first number")
         var b =  prompt("enter the second number")
         a = Number(a)
         b = Number(b)
         var sum;
+        a--
+        console.log(a)
+        // a = a + 1
+        // a += 1
         sum = a + b;
         div = a / b;
         mul = a * b;
         rem = a % b;
-        console.log(rem) // 12 + 11 = 23
-        console.log(mul)
-        console.log(div)
-        console.log(sum)
+        // console.log(rem) // 12 + 11 = 23
+        // console.log(mul)
+        // console.log(div)
+        // console.log(sum)
 
         // concatinate operator
         //  +(plus) ,(comma) 
