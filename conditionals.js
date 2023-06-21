@@ -24,6 +24,28 @@ else {
     // false statement
 }
 
+
+3. if else if else
+if(condition 1){
+    // body of condition 1
+}
+else if(condition 2){
+    // body of condition 2
+}
+else if(condition 3){
+    // body of condition 3
+}
+.
+.
+.
+.
+else if(condition n){
+    // body of condition n
+}
+else {
+    // default block
+}
+
 */
 
 // var a = 12;
@@ -70,4 +92,18 @@ if (nepali >= 35 && english >= 35 && math >= 35 && science >= 35 && health >= 35
 }
 else {
     console.log("try again")
+}
+
+var number = 21
+if (number % 3 == 0 && number % 7 == 0) {
+    console.log(number, 'is divisible by 3 and 7')
+}
+else if (number % 3 == 0) {
+    console.log(number, 'is divisible by 3')
+}
+else if (number % 7 == 0) {
+    console.log(number, "is divisible by 7")
+}
+else {
+    console.log(number, " is not divisible by 3 and 7")
 }
