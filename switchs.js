@@ -46,8 +46,9 @@ day = '+'
 
 switch(day){
     case '+':
-        var sum = n1 + n2
-        console.log(sum);
+        sum()
+        // var sum = n1 + n2
+        // console.log(sum);
         break;
     case 2: 
         console.log("monday")

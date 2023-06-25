@@ -15,9 +15,6 @@ js centric loop
 7. find
 
 
-
-
-
 1. for loop
 
 syntax:
