@@ -144,6 +144,23 @@ types of function:
 2. function with argument/parameter
 3. function with return type
 4. anynamous function(unnamed function)
+syntax:
+function(){
+
+}
+
 5. IIFE(immediately invoked functional expression)
+syntax:
+()()
+
 */
 
+function hi(){
+    console.log("hi guys")
+}
+// hi()
+
+(function(){
+    console.log("i am anynamous function")
+    console.log(" i am taking help of IIFE to get executed")
+})()
