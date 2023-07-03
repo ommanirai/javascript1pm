@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Hello world!</h1>
+    <script>
+        /*
+        synchronous and asynchronous pattern
+
+        step 1
+        step 2 => it waits the result of step 1
+        step 3 => it waits the result of step 2
+        step 4 => it waits the result of step 3
+        step 5 => it waits the result of step 4
+        .
+        .
+        .
+        step n => it waits the result of step step n-1
+        
+        */
+        // methods
+        // console.log(1)
+        // console.log(2)
+        var number = 0
+        // setTimeout(function () {
+        //     // console.log(3)
+        //     document.write(3)
+        // }, 10000)
+        var result = setInterval(function(){
+            number ++
+            if(number == 10){
+                clearInterval(result)   
+            }
+
+            // console.log("hi")
+            document.write(number)
+
+        },1000)
+        console.log(result)
+        // console.log(4)
+        // console.log(5)
+    </script>
+</body>
+
+</html>

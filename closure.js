@@ -52,7 +52,7 @@ function multiply(num1){
         var mul = num1 * num2;
         return mul;
     }
-    return hi
+    return hi;
 }
 
 var result = multiply(3)(3)
@@ -60,5 +60,13 @@ var result = multiply(3)(3)
 console.log(result)
 
 // TASK
+function sum(a, b){
+    function ad(c){
+        var result = a + b + c;
+        return result;
+    }
+    return ad;
+}
+
 var sum_result = sum(2,3)(4)
 console.log(sum_result) // 9
