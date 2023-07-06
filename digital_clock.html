@@ -1,0 +1,78 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hour:</h1>
+    <h1 id="hour">hour</h1>
+    <h1>Minutes:</h1>
+    <h1 id="min">min</h1>
+    <h1>Seconds:</h1>
+    <h1 id="sec">sec</h1>
+    <script>
+        console.log(document)
+        var sec = 0
+        var min = 0
+        var hour = 0
+        setInterval(function(){
+            sec++
+            document.getElementById("sec").innerHTML = sec;
+            if(sec == 60){
+                min++
+                sec = 0
+            }
+            document.getElementById("min").innerHTML = min;
+        }, 200)
+    </script>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+</head>
+
+<body>
+    <h1>Hour:</h1>
+    <h3 id="hour">hour</h3>
+
+    <h1>Minutes:</h1>
+    <h3 id="min">min</h3>
+
+    <h1>Seconds:</h1>
+    <h3 id="sec">sec</h3>
+
+    <h1 id="time"></h1>
+
+    <script>
+        var hour = 0
+        var min = 58
+        var sec = 0
+
+        setInterval(function () {
+            sec++
+            document.getElementById("sec").innerHTML = sec;
+            if (sec == 60) {
+                min++;
+                sec = 0
+            }
+            if (min == 60) {
+                hour++;
+                min = 0;
+            }
+            document.getElementById("hour").innerHTML = hour;
+            document.getElementById("min").innerHTML = min;
+            document.getElementById("time").innerHTML = hour + "h : " + min + "m : " + sec + " s";
+        }, 200)
+    </script>
+</body>
+
+</html>
