@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- dom => document object model -->
+    <!-- 
+        dom
+        methods => createElement(), append(), remove(), getElementById(), getElementByClassName(), setAttribute()
+        properties => innerHTML, textContent, src, id, class
+
+
+
+    -->
+</head>
+
+<body>
+    <h1 id="heading" >Document Object Model</h1>
+    <script>
+        console.log("hello")
+        document.write("i am js")
+        var dom = document;
+        var newTag = document.body;
+        var div = document.createElement("div")
+        newTag.append(div)
+
+        document.getElementById("heading").innerHTML = "from javascript"
+        // document.querySelector("h1").setAttribute("title", 'title from the js')
+        // document.querySelector("h1").setAttribute("id", 'from-js')
+        // document.querySelector("h1").title = "another way of adding a attribute"
+        // document.querySelector("h1").classList = "another"
+        document.getElementById("heading").style.color= 'red'
+        document.getElementById("heading").style.backgroundColor  = 'green'
+        console.log(dom)
+    </script>
+</body>
+
+</html>

@@ -107,8 +107,6 @@ array_name.reduce(function(acc, item, index, source){
 
 }, initial_value)
 
-
-
 */
 // details.reduce(function(acc, item, index, source){
 //     console.log(acc)
