@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Game</title>
+</head>
+
+<body>
+    <img id="image-first" src="" alt="" width="400px" height="400px">
+    <img id="image-second" src="" alt="" width="400px" height="400px">
+    <h1 id="result"></h1>
+    <script>
+        var image_array = ['https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVhrS210aCD0dPmEcWyVq1whKETDmKfybDH1b9Cu4&s', 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Dice-2-b.svg/2048px-Dice-2-b.svg.png', 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Dice-3-b.svg/768px-Dice-3-b.svg.png', 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Dice-4-b.svg/1024px-Dice-4-b.svg.png', 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Dice-5-b.svg/1024px-Dice-5-b.svg.png', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsk3WyjyXtFgdi1qumBk303b53wQhlOA4pPXCe-Ec&s']
+
+        // generate random number from 0 to 5
+        var player1 = Math.random() * 5
+        player1 = Math.floor(player1)
+        // document.write(player1)
+
+
+        var player2 = Math.random() * 5
+        player2 = Math.floor(player2)
+        // document.write(player2)
+
+        document.getElementById("image-first").src = image_array[player1]
+        document.getElementById("image-second").src = image_array[player2]
+
+        if (player1 == player2) {
+            document.getElementById("result").innerHTML = "Draw Game!"
+        }
+        else if (player1 > player2) {
+            document.getElementById("result").innerHTML = "Player one win the game!"
+        }
+        else {
+            document.getElementById("result").innerHTML = "Player two win the game!"
+        }
+    </script>
+</body>
+
+</html>

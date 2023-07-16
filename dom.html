@@ -10,14 +10,14 @@
         dom
         methods => createElement(), append(), remove(), getElementById(), getElementByClassName(), setAttribute()
         properties => innerHTML, textContent, src, id, class
-
-
-
     -->
 </head>
 
 <body>
-    <h1 id="heading" >Document Object Model</h1>
+    <h1 id="heading">Document Object Model</h1>
+    <img id="image"
+        src="https://img.freepik.com/free-photo/wide-angle-shot-single-tree-growing-clouded-sky-during-sunset-surrounded-by-grass_181624-22807.jpg"
+        alt="">
     <script>
         console.log("hello")
         document.write("i am js")
@@ -31,8 +31,10 @@
         // document.querySelector("h1").setAttribute("id", 'from-js')
         // document.querySelector("h1").title = "another way of adding a attribute"
         // document.querySelector("h1").classList = "another"
-        document.getElementById("heading").style.color= 'red'
-        document.getElementById("heading").style.backgroundColor  = 'green'
+        document.getElementById("heading").style.color = 'red'
+        document.getElementById("heading").style.height = '400px'
+        document.getElementById("heading").style.backgroundColor = 'green'
+        document.getElementById("image").src = "https://image.shutterstock.com/image-photo/high-mountain-morning-time-beautiful-260nw-1384588922.jpg"
         console.log(dom)
     </script>
 </body>
