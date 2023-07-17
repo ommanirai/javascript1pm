@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <style>
+        .container {
+            height: 400px;
+            width: 400px;
+            background-color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" id="contain">
+
+    </div>
+    <button onclick="changeMe()">Click me</button>
+    <button onmouseenter="hover_me()">hover me</button>
+    <button onmouseout="mouseOut()">mouse out</button>
+    <button ondblclick="doubleClick()">doube click me</button>
+    <input type="text" onkeydown="changeText()" id="types">
+    <!-- <input type="text" onkeyup="changeText()" id="types"> -->
+    <!-- <input type="text" onchange="changeText()" id="types"> -->
+    <h1 id="text"></h1>
+    <script>
+        function changeText(){
+            var result = document.getElementById("types").value;
+            document.getElementById("text").innerHTML = result;
+        }
+
+        function changeMe() {
+            document.getElementById("contain").style.backgroundColor = 'red'
+        }
+
+        function hover_me() {
+            document.getElementById("contain").style.backgroundColor = 'black'
+        }
+
+        function mouseOut() {
+            document.getElementById("contain").style.backgroundColor = 'yellow'
+        }
+
+        function doubleClick() {
+            document.getElementById("contain").style.height = '200px'
+            document.getElementById("contain").style.width = '200px'
+        }
+    </script>
+
+</body>
+
+</html>
