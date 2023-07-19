@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <label for="username">Username</label>
+    <input type="text" id="username" onkeyup="validUsername()">
+    <span id="username_error"></span>
+    <br><br>
+
+    <label for="email">Email</label>
+    <input type="text" id="email">
+    <br><br>
+
+    <label for="password">Password</label>
+    <input type="text" id="password">
+    <br><br>
+
+    <label for="phone">Phone</label>
+    <input type="text" id="phone">
+
+    <script>
+        function validUsername() {
+            var username = document.getElementById("username").value;
+            // console.log(username)
+            if (!username.match(/^[a-z]+/)) {
+                document.getElementById("username_error").innerHTML = "invalid username";
+                document.getElementById("username_error").style.color = 'red'
+            }
+            else if (username.match(/[0-9]+/)) {
+                document.getElementById("username_error").innerHTML = "number not allowed in username";
+                document.getElementById("username_error").style.color = 'red'
+            }
+            else if(username.match(/[~!@#$%^&*()+\-]/)){
+                document.getElementById("username_error").innerHTML = "special character not allowed in username";
+                document.getElementById("username_error").style.color = 'red'
+            }
+            else {
+                document.getElementById("username_error").innerHTML = "valid username";
+                document.getElementById("username_error").style.color = 'green'
+            }
+        }
+    </script>
+</body>
+
+</html>
