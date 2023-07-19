@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider</title>
+    <style>
+        .image-slider {
+            margin: auto;
+            width: 700px;
+            height: 500px;
+            /* background-color: blue; */
+            position: relative;
+        }
+
+        .image_area {
+            width: 100%;
+            height: 500px;
+        }
+
+        .left,
+        .right {
+            position: absolute;
+            top: 50%;
+            font-size: 48px;
+            color: red;
+            background-color: black;
+            cursor: pointer;
+        }
+
+        .right {
+            right: 0;
+        }
+
+        .left {
+            left: 0;
+        }
+
+        .left:hover,
+        .right:hover {
+            color: forestgreen;
+            background-color: azure;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="image-slider">
+        <img src=" " alt="" class="image_area" id="image">
+        <button class="left" onclick="left()" id="lefts">&lt;</button>
+        <button class="right" onclick="right()" id="rights">&gt;</button>
+    </div>
+    <script>
+        var image_array = ['https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVhrS210aCD0dPmEcWyVq1whKETDmKfybDH1b9Cu4&s', 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Dice-2-b.svg/2048px-Dice-2-b.svg.png', 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Dice-3-b.svg/768px-Dice-3-b.svg.png', 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Dice-4-b.svg/1024px-Dice-4-b.svg.png', 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Dice-5-b.svg/1024px-Dice-5-b.svg.png', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsk3WyjyXtFgdi1qumBk303b53wQhlOA4pPXCe-Ec&s']
+
+        var length = image_array.length // 6
+        // document.write(length)
+        var index = 0
+
+        document.getElementById("image").src = image_array[index]
+
+        function right(){
+            index++
+            if(index == length){
+                index = 0
+            }
+            document.getElementById("image").src = image_array[index]
+        }
+        function left(){
+            index--
+            if(index < 0){
+                index = length - 1
+            }
+            document.getElementById("image").src = image_array[index]
+        }
+
+
+
+
+    </script>
+
+</body>
+
+</html>
